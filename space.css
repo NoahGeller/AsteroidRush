@@ -1,0 +1,92 @@
+body {
+  background-color: black;
+  color: #ffffff;
+  font-family: consolas, sans-serif;
+  height: 800px;
+}
+
+#gameArea {
+  width: 1000px;
+  height: 800px;
+  margin: 0 auto;
+  border: 3px solid blue;
+  float: center;
+}
+
+#player {
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+}
+
+#asteroidField {
+  display: block;
+  position: absolute;
+  float: center;
+}
+
+#gameover {
+  text-align: center;
+  visibility: hidden;
+  color: yellow;
+  font-weight: bold;
+  display: block;
+  position: relative;
+  top: 180px;
+  margin: 0 auto;
+  font-size: 36pt;
+  width: 400px;
+}
+
+p {
+  text-align: center;
+}
+
+#highscores {
+  padding: 10px;
+  z-index: 1;
+  visibility: hidden;
+  display: block;
+  text-align: center;
+  position: relative;
+  bottom: 600px;
+  margin: 0 auto;
+  width: 300px;
+  border: 2px solid blue;
+  background-color: black;
+}
+
+#hsprompt {
+  font-size: 20pt;
+}
+
+#scoreArea {
+  position: absolute;
+  margin: 5px;
+}
+
+#scoretable {
+  margin: 0 auto;
+  text-align: left;
+  width: 250px;
+}
+
+#titlescreen {
+  position: absolute;
+  z-index: -2;
+  margin: 0 auto;
+  left: 20%;
+  right: 20%;
+  text-align: center;
+  font-size: 72pt;
+  color: yellow;
+}
+
+#instructions {
+  font-size: 32pt;
+}
+
+#playagain {
+  right: 10px;
+}

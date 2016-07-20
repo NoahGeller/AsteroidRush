@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="space.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>Asteroid Rush</title>
+  </head>
+  <body onload="readyGame();">
+    <div id="gameArea">
+      <div id="titlescreen">
+        <p>ASTEROID RUSH</p>
+        <p id="instructions">Press space to begin</p>
+      </div>
+      <div id="scoreArea" style="visibility:hidden;">
+        SCORE: 0
+      </div>
+      <svg  id="asteroidField" width="1000" height="800"></svg>
+      <img id="player" alt="spaceship" src="ship.gif" style="top:745px;left:0px;visibility:hidden;"/>
+      <div id="gameover">
+        GAME OVER!
+        <br />
+        <span id="hsprompt">Press 'h' for high scores</span>
+      </div>
+    </div>
+    <div id="highscores">
+      <strong>HIGH SCORES</strong>
+      <table id="scoretable"></table>
+      <form name="addScore" id="addScore" method="get" action="submitscore.cgi" onsubmit="return submitScore();">
+        <input type="hidden" name="score" id="score" />
+        <p>Enter your name:&nbsp;<input type="text" name="uname" maxlength="15" /></p>
+        <input type="submit" value="Submit Score" id="submitscorefield"/>
+      </form>
+        <button id="playagain" onclick="playAgain();">Play Again</button>
+    </div>
+  </body>
+</html>
