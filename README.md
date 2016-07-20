@@ -1,6 +1,3 @@
-# AsteroidRush
-A short game I made at WPI Frontiers 2016 over the course of about one and a half weeks.  Nothing serious, just a silly little diversion from your everyday life.
-
 #How to Play
 Start the game by pressing spacebar. Control the ship with the arrow keys, making sure to dodge the falling asteroids! Stay alive as long as possible in order to raise your score.
 
